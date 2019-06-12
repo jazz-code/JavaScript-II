@@ -72,18 +72,6 @@ function contains(item, list, cb) {
 };
 
 
-
-//   const check = items.filter((check) => {
-//     if (items.check === items) {
-//       cb(true);
-//     }
-//       else cb(false);
-//   });
-// }
-//   contains(items, (check) => {
-//     console.log(check);
-//   })
-
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {

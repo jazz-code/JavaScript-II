@@ -87,7 +87,8 @@ let allCaps = [];
     //      allCaps.push(runners.first_name);
     // })
     // console.log(firstNames);
-console.log(allCaps); 
+
+// console.log(allCaps); 
 
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue.  Get a list of runners with large sized shirts so they can choose a different size. Return an array named largeShirts that contains information about the runners that have a shirt size of L and log the result
@@ -120,12 +121,24 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
-//Need to send an E-mail blast to everyone
+//Need to send a E-mail message blast to everyone
 
-    // const email = runners.map((blast) => {
-    //     runners.email
-    // })
+    const email = runners.map((blast, message) => {
+        message = "Stay safe!";
+        return (`${blast.email} ${message}`);
+    });
+
+console.log(email)
 
 // Problem 2
+// select people from company skinix from array
+let skinix = [];
 
-// Problem 3
+    const company = runners.filter((company) => {
+        if (company.company_name === "Skinix") {
+            return skinix.push(company);
+        }
+    });
+
+    console.log(skinix);
+
